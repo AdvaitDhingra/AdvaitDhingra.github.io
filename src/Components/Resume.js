@@ -54,6 +54,19 @@ class Resume extends Component {
       );
     });
 
+    const interests = this.props.data.interests.map((interests) => {
+      const backgroundColor = this.getRandomColor();
+      const className = "bar-expand " + interests.name.toLowerCase();
+      const width = interests.level;
+
+      return (
+        <li key={interests.name}>
+          <span style={{ width, backgroundColor }} className={className}></span>
+          <em>{interests.name}</em>
+        </li>
+      );
+    })
+
     return (
       <section id="resume">
         <Slide left duration={1300}>
@@ -97,6 +110,24 @@ class Resume extends Component {
 
               <div className="bars">
                 <ul className="skills">{skills}</ul>
+              </div>
+            </div>
+          </div>
+        </Slide>
+
+        <Slide left duration={1300}>
+          <div className="row skill">
+            <div className="three columns header-col">
+              <h1>
+                <span>Interests</span>
+              </h1>
+            </div>
+
+            <div className="nine columns main-col">
+              <p>Here are some of my areas of interest (in Physics)</p>
+
+              <div className="bars">
+                <ul className="skills">{interests}</ul>
               </div>
             </div>
           </div>
