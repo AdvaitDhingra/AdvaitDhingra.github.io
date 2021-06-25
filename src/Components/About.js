@@ -19,7 +19,7 @@ class About extends Component {
               <img
                 className="profile-pic"
                 src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                alt="me"
               />
             </div>
             <svg width="625" height="98" viewBox="0 0 625 98" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,10 +63,6 @@ class About extends Component {
                   <h2>Contact Details</h2>
                   <p className="address">
                     <span>{name}</span>
-                    <br />
-                    <span>
-                    </span>
-                    <br />
                     <br />
                     <span>{email}</span>
                   </p>
