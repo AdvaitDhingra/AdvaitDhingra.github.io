@@ -1,0 +1,107 @@
+{
+  "main": {
+    "name":"Advait Dhingra",
+    "description":"Physics Enthusiast, Hobbyist Programmer, Speedcuber",
+    "image":"profilepic.jpg",
+    "bio":"Hello. My name is Advait Dhingra and welcome to my portfolio website.",
+    "contactmessage":"Feel free to contact me via email. No spam please.",
+    "email": "advait.dhingra1006@gmail.com",
+    "github":"https://github.com/AdvaitDhingra",
+    "linkedin": "https://www.linkedin.com/in/advaitdhingra/",
+    "website": "https://advaitdhingra.github.io",
+    "resumedownload":"images/portfolio/Physics_Resume_Advait_Dhingra.pdf",
+    "social":[
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/advaitdhingra",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/AdvaitDhingra",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"I am comfortable with multiple programming languages and have a passion for Physics and Mathematics",
+    "education":[
+      {
+        "school":"Friedrich-Ebert-Gymnasium Bonn",
+        "degree":"German Highschool Diploma + IB Diploma",
+        "graduated":"June 2023",
+        "description":"I am currently a student here"
+      },
+      {
+        "school":"Independant Bonn Internation School",
+        "degree":"Primary School",
+        "graduated":"January 2016",
+        "description":"Primary School"
+      }
+
+    ],
+    "work":[
+      {
+        "company":"Physikalisches Institut, Friedrich-Wilhelms-Universität Bonn",
+        "title":"Intern",
+        "years":"January 2021",
+        "description":"I coded a Muon Kamiokande detector simulation in C++, attended a Masterclass organized by Netzwerk Teilchenwelt and presented my findings in a paper I wrote."
+      }
+    ],
+    "skills":[
+      {
+        "name":"ReactJs",
+        "level":"70%"
+      },
+      {
+        "name": "Javascript",
+        "level": "60%"
+      },
+      {
+        "name":"C++",
+        "level":"20%"
+      },
+      {
+        "name":"Python",
+        "level":"15%"
+      },
+
+      {
+        "name":"CSS",
+        "level":"15%"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Quantum Field Theory",
+        "level": "90%"
+      },
+      {
+        "name": "String Theory",
+        "level": "90%"
+      },
+      {
+        "name": "General Relativity",
+        "level": "80%"
+      },
+      {
+        "name": "Special Relativity",
+        "level": "70%"
+      },
+      {
+        "name": "Astrophysics/Cosomlogy",
+        "level": "65%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Kamiokanne Muon Simulation",
+        "category":"A simulation I made during my Internship at the University of Bonn",
+        "image":"01.jpeg",
+        "url":"https://drive.google.com/file/d/1TPziSyJRoNrG6di6-I8RJtTuc1XjvAJ6/view?usp=sharing"
+      }
+    ]
+  }
+}
