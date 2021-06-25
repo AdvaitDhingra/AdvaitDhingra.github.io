@@ -57,22 +57,17 @@
         "level": "60%"
       },
       {
-        "name":"CSS",
-        "level":"50%"
+        "name":"C++",
+        "level":"25%"
       },
       {
         "name":"Python",
         "level":"20%"
       },
-      
+
       {
-        "name":"C++",
+        "name":"CSS",
         "level":"15%"
-      },
-      
-      {
-        "name":"Shell",
-        "level":"5%"
       }
     ],
     "interests": [
@@ -95,10 +90,6 @@
       {
         "name": "Astrophysics/Cosomlogy",
         "level": "65%"
-      },
-      {
-        "name": "High Energy Physics",
-        "level": "35%"
       }
     ]
   },
@@ -107,7 +98,7 @@
       {
         "title":"Kamiokanne Muon Simulation",
         "category":"A simulation I made during my Internship at the University of Bonn",
-        "image":"01.jpg",
+        "image":"01.jpeg",
         "url":"https://drive.google.com/file/d/1TPziSyJRoNrG6di6-I8RJtTuc1XjvAJ6/view?usp=sharing"
       }
     ]

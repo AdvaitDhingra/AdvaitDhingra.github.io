@@ -1,12 +1,25 @@
 import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
 
+import emailjs from 'emailjs-com'
+
 class Contact extends Component {
   render() {
     if (!this.props.data) return null;
 
     const name = this.props.data.name;
     const message = this.props.data.contactmessage;
+
+    function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_72tuz39', 'template_dlvmdra', e.target, 'user_YpM0vxhk88qMpJCF8dzXA')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
 
     return (
       <section id="contact">
@@ -27,7 +40,8 @@ class Contact extends Component {
         <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
+            <form onSubmit = {(e) => sendEmail(e)} action="" method="post" id="contactForm" name="contactForm">
+            <input type="hidden" name="contact_number" />
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -38,7 +52,7 @@ class Contact extends Component {
                       defaultValue=""
                       size="35"
                       id="contactName"
-                      name="contactName"
+                      name="user_name"
                       onChange={this.handleChange}
                     />
                   </div>
@@ -52,7 +66,7 @@ class Contact extends Component {
                       defaultValue=""
                       size="35"
                       id="contactEmail"
-                      name="contactEmail"
+                      name="user_email"
                       onChange={this.handleChange}
                     />
                   </div>
@@ -77,18 +91,19 @@ class Contact extends Component {
                       cols="50"
                       rows="15"
                       id="contactMessage"
-                      name="contactMessage"
+                      name="message"
                     ></textarea>
                   </div>
 
                   <div>
-                    <button className="submit">Submit</button>
+                    <button  className="submit" type = "submit" value = "Send">Submit</button>
                     <span id="image-loader">
                       <img alt="" src="images/loader.gif" />
                     </span>
                   </div>
                 </fieldset>
               </form>
+
 
               <div id="message-warning"> Error boy</div>
               <div id="message-success">
@@ -108,7 +123,7 @@ class Contact extends Component {
                 </p>
               </div>
 
-              
+
             </aside>
           </Slide>
         </div>
