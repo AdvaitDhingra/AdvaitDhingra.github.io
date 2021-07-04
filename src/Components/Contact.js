@@ -18,6 +18,8 @@ class Contact extends Component {
       }, (error) => {
           console.log(error.text);
       });
+
+      alert("Email sent")
     }
 
     return (
